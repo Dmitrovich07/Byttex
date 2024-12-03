@@ -34,6 +34,7 @@
 .header_content {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 60px;
 }
 
 .header_content-left {
@@ -96,3 +97,103 @@
 
 }
 
+/* MAIN */
+.main {
+  background: linear-gradient(180deg, #F9F0E5 0%, rgba(249, 240, 229, 0.18) 43.05%, rgba(249, 240, 229, 0.00) 100%);
+}
+
+.response {
+
+}
+
+.companies_title {
+  text-align: center;
+  margin-top: 77px;
+  color: #868787;
+  text-align: center;
+  font-family: "Sofia Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.6px;
+}
+
+.companies_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 130px;
+}
+
+.companies_list-item {
+
+}
+
+.companies_list-img {
+
+}
+
+.loungewear {
+
+}
+
+.loungewear-left {
+  /* max-width: 550px; */
+}
+
+.loungewear-title {
+  color: #01005B;
+  font-family: "Sofia Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; 
+  letter-spacing: 1.28px;
+  margin-bottom: 74px;
+}
+
+.loungewear_list {
+
+}
+
+.loungewear_list-item {
+  display: flex;
+  align-items: start;
+  margin-bottom: 14px;
+}
+
+.loungewear_list-item:last-child {
+  margin: 0;
+}
+
+.loungewear_item-icon {
+  margin-right: 32px;
+}
+
+.loungewear_item-textcontent {
+
+}
+
+.loungewear_item-title {
+  padding: 8px 0 14px 0;
+  color: #01005B;
+  font-family: "Sofia Pro";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+  letter-spacing: 0.88px;
+}
+
+.loungewear_item-text {
+  max-width: 500px;
+  color: #6C6C6C;
+  font-family: "Sofia Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.45px;
+}
