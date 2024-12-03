@@ -487,3 +487,147 @@
   line-height: 23px;
   letter-spacing: 0.48px;
 }
+
+.questions-section {
+
+}
+
+.questions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.questions-left-block {
+  max-width: 631px;
+}
+
+.question-title {
+  color: #01005B;
+  font-family: "Sofia Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 1.28px;
+  margin-bottom: 50px;
+}
+
+.question-list {
+
+}
+
+.questions-item {
+  padding: 23px 0 29px 0;
+  border-top: 1px solid #EAEAEA;
+  border-bottom: 1px solid #EAEAEA
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.question-text {
+  color: #01005B;
+  font-family: "Sofia Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.72px;
+}
+
+.question-button {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-button span {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #01005B;
+  border-radius: 2px;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.questions-item.active .question-button {
+  animation: spin 0.6s ease forwards;
+}
+
+.questions-item:not(.active) .question-button {
+  animation: spin-reverse 0.6s ease forwards;
+}
+
+.questions-item:not(.active) .question-button .horizontal {
+  transform: rotate(0deg);
+}
+
+.questions-item:not(.active) .question-button .vertical {
+  transform: rotate(90deg);
+  opacity: 1;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.question-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.question-answer-text {
+  color: #676869;
+  font-family: "Sofia Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.45px;
+  padding: 10px 0 10px 0;
+  max-width: 567px;
+}
+
+.questions-item.active .question-answer {
+  max-height: 200px;
+}
+
+.horizontal {
+
+}
+
+.vertical {
+
+}
+
+.questions-right-block {
+
+}
+
+.questions-img {
+  max-width: 430px;
+  height: auto;
+}
