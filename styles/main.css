@@ -136,11 +136,11 @@
 }
 
 .loungewear {
-
+  margin-bottom: 55px;
 }
 
 .loungewear-left {
-  /* max-width: 550px; */
+  
 }
 
 .loungewear-title {
@@ -196,4 +196,87 @@
   font-weight: 400;
   line-height: 23px;
   letter-spacing: 0.45px;
+}
+
+.self-improvement-section {
+  padding: 130px 0 100px 0;
+  background-color: #F0EEEF;
+}
+
+.self-improvement {
+  display: flex;
+  justify-content: space-around;
+}
+
+.self-improvement-images {
+  padding: 0 50px;
+  position: relative;
+}
+
+.self-improvement-images .main-image {
+
+}
+
+.self-improvement-images .top-image, 
+.self-improvement-images .bottom-image {
+  position: absolute; 
+  width: 165px; 
+  height: auto;
+  z-index: 2;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.self-improvement-images .top-image {
+  top: -47px;
+  left: -20px; 
+}
+
+.self-improvement-images .bottom-image {
+  bottom: -30px;
+  right: -20px;
+}
+
+.self-improvement-img {
+
+}
+
+.self-improvement-content {
+  max-width: 620px;
+}
+
+.self-improvement-title {
+  color: #2A2996;
+  font-family: "Sofia Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 1.28px;
+  margin-bottom: 30px;
+}
+
+.self-improvement-text {
+  color: #6C6C6C;
+  font-family: "Sofia Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.45px;
+  margin-bottom: 20px;
+}
+
+.self-improvement-button {
+  width: 356px;
+  height: 56px;
+  border-radius: 5px;
+  background: #01005B;
+  color: #FFF;
+  text-align: center;
+  font-family: "Suisse Int'l";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54px;
 }
