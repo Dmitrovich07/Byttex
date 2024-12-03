@@ -345,13 +345,15 @@
   letter-spacing: 0.45px;
 }
 
-.step_cards-section-buttons {
+.step_cards-section-buttons,
+.responses-buttons {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
 
-.step_cards-section-button {
+.step_cards-section-button,
+.responses-button {
   width: 369px;
   height: 56px;
   border-radius: 5px;
@@ -389,4 +391,99 @@
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.24px;
+}
+
+.fans-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 75px;
+}
+
+.fans-section-title {
+  max-width: 631px;
+  color: #01005B;
+  text-align: center;
+  font-family: "Sofia Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; 
+  letter-spacing: 1.28px;
+  margin-bottom: 40px;
+}
+
+.fans-section-text {
+  max-width: 613px;
+  color: #676869;
+  text-align: center;
+  font-family: "Sofia Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.45px;
+  margin-bottom: 55px;
+}
+
+.fans-section-images {
+  gap: 5px;
+  max-width: 1470px;
+  margin-bottom: 111px;
+}
+
+.responses {
+  display: flex;
+  align-items: flex-start;
+  gap: 42px;
+  margin-bottom: 63px;
+}
+
+.response-card {
+  max-width: 338px;
+  box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  border: 1px solid #EAEAEA;
+  background-color: #FFF;
+  padding: 32px 37px;
+  display: inline-block;
+}
+
+.profile {
+  display: flex;
+  align-items: start;
+  margin-bottom: 12px;
+}
+
+.profile-avatar {
+  width: 39px;
+  height: 39px;
+  background-color: #1C2E58;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+
+.profile-stars {
+
+}
+
+.profile-name {
+  color: #676869;
+  font-family: "Sofia Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.45px;
+}
+
+.response-text {
+  color: #676869;
+  font-family: "Suisse Int'l";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.48px;
 }
