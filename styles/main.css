@@ -98,8 +98,22 @@
 }
 
 /* MAIN */
-.main {
+.main-section {
+  position: relative;
+}
+
+.main-section-gradient {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 530px;
+  width: 100%;
   background: linear-gradient(180deg, #F9F0E5 0%, rgba(249, 240, 229, 0.18) 43.05%, rgba(249, 240, 229, 0.00) 100%);
+}
+.main {
+  position: relative;
+  z-index: 2;
 }
 
 .response {
@@ -699,3 +713,152 @@
   line-height: 20px; 
   letter-spacing: 0.42px;
 }
+
+/* FOOTER */
+.footer-section {
+  position: relative;
+  padding-top: 84px;
+}
+
+.footer {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-title {
+  text-align: center;
+  color: #01005B;
+  text-align: center;
+  font-family: "Sofia Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; 
+  letter-spacing: 1.28px;
+  margin-bottom: 30px;
+}
+
+.footer-text {
+  max-width: 587px;
+  text-align: center;
+  color: #676869;
+  text-align: center;
+  font-family: "Sofia Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.45px;
+  
+}
+
+.footer-images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 58px 0;
+}
+
+.footer-buttons {
+
+}
+
+.footer-button {
+  width: 369px;
+  height: 56px; 
+  border-radius: 5px;
+  background: #01005B;
+  color: #FFF;
+  text-align: center;
+  font-family: "Suisse Int'l";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54px;
+}
+
+.footer-info {
+
+}
+
+.payment-methods {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 22px;
+}
+
+.advantages-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 85px;
+}
+
+.advantage-card {
+  max-width: 210px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantage-card-img {
+  margin-right: 12px;
+}
+
+.advantage-card-text {
+  color: #676869;
+  font-family: "Sofia Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.42px;
+}
+
+.footer-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  height: 508px;
+  width: 100%;
+  background: linear-gradient(0deg, #F9F0E5 0%, rgba(249, 240, 229, 0.18) 43.05%, rgba(249, 240, 229, 0.00) 100%);
+}
+
+
+/* .left-gradient,
+.right-gradient {
+  width: 139px;
+  height: 196px;
+  background: linear-gradient(180deg, rgba(249, 240, 229, 0.70) 0%, rgba(249, 240, 229, 0.22) 100%);
+}
+
+.left-gradient {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  left: 550px;
+  transform: translateY(-50%);
+}
+
+.right-gradient {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  right: 550px;
+  transform: translateY(-50%);
+}
+
+.footer-img {
+  position: relative;
+  z-index: 2;
+} */
