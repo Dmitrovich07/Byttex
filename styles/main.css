@@ -140,7 +140,7 @@
 }
 
 .loungewear-left {
-  
+
 }
 
 .loungewear-title {
@@ -279,4 +279,114 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.54px;
+}
+
+.step_cards-section {
+  padding: 75px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.step_cards-title {
+  color: #01005B;
+  text-align: center;
+  font-family: "Sofia Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 1.28px;
+  margin-bottom: 50px;
+}
+
+.step_cards {
+  display: flex;
+  gap: 41px;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
+.card {
+  width: 346px;
+  height: 321px;
+  border-radius: 8px;
+  background-color: #F0EEEF;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 35px;
+}
+
+.card:nth-child(2) {
+  background-color: #F9F0E6;
+}
+
+.card-title {
+  color: #01005B;
+  text-align: center;
+  font-family: "Sofia Pro";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.88px;
+}
+
+.card-text {
+  color: #676869;
+  text-align: center;
+  font-family: "Sofia Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.45px;
+}
+
+.step_cards-section-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.step_cards-section-button {
+  width: 369px;
+  height: 56px;
+  border-radius: 5px;
+  background: #01005B;
+  color: #FFF;
+  text-align: center;
+  font-family: "Suisse Int'l";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.reting-item {
+
+}
+
+.reting-img {
+
+}
+
+.reting-text {
+  color: #828282;
+  font-family: "Suisse Int'l";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.24px;
 }
