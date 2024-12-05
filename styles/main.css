@@ -525,12 +525,13 @@
   line-height: 23px;
   letter-spacing: 0.45px;
   margin-bottom: 55px;
+  padding: 0 23px;
 }
 
 .fans-section-images {
   gap: 5px;
-  max-width: 1470px;
-  margin-bottom: 111px;
+  max-width: 1280px;
+  margin-bottom: 40px;
 }
 
 .swiper-response {
@@ -1406,5 +1407,10 @@
   }
   .swiper-slide .response-card {
     width: 230px;
+  }
+  .fans-section-title {
+    max-width: 631px;
+    padding: 0 23px;
+    font-size: 26px;
   }
 }
