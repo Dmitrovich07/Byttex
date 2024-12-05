@@ -960,10 +960,10 @@
 }
 
 .thumbs-slider .swiper-slide img {
-  width: 31px;
-  height: 32px;
+  display: block;
+  width: 100%;
+  height: auto;
   object-fit: cover;
-  border-radius: 5px;
 }
 
 .thumbs-slider .swiper-slide-thumb-active {
