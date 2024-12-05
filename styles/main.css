@@ -101,6 +101,12 @@
   padding: 0 7px;
 }
 
+.comment-profile-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .comment-text {
   margin-top: 12px;
   color: #676869;
@@ -1412,5 +1418,16 @@
     max-width: 631px;
     padding: 0 23px;
     font-size: 26px;
+  }
+  .comment-profile-info {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+  }
+  .comment-profile-name {
+    order: 2;
+  }
+  .comment-profile-icons {
+    order: 1;
   }
 }
