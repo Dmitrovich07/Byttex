@@ -1,8 +1,7 @@
 const thumbsSwiper = new Swiper('.thumbs-slider', {
-  slidesPerView: 'auto', // Автоматическая ширина миниатюр
-  spaceBetween: 10, // Расстояние между миниатюрами
-  // centeredSlides: true, // Центрируем миниатюры
-  watchSlidesProgress: true, // Отслеживаем активный слайд
+  slidesPerView: 'auto',
+  spaceBetween: 10,
+  watchSlidesProgress: true,
 });
 
 

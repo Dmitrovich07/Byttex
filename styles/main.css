@@ -35,6 +35,10 @@
   margin-bottom: 58px;
 }
 
+.button-arrow {
+  margin-left: 15px;
+}
+
 .header_content-left {
   max-width: 592px;
 }
