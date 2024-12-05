@@ -1,3 +1,25 @@
+const thumbsSwiper = new Swiper('.thumbs-slider', {
+  slidesPerView: 'auto', // Автоматическая ширина миниатюр
+  spaceBetween: 10, // Расстояние между миниатюрами
+  // centeredSlides: true, // Центрируем миниатюры
+  watchSlidesProgress: true, // Отслеживаем активный слайд
+});
+
+
+new Swiper('.swiper-gallery', {
+  loop: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.swiper-gallery-next',
+    prevEl: '.swiper-gallery-prev',
+  },
+  thumbs: {
+    swiper: thumbsSwiper,
+  },
+  initialSlide: 1, 
+});
+
+
 new Swiper('.swiper', {
   loop: true,
 
@@ -15,8 +37,8 @@ new Swiper('.swiper-response', {
   spaceBetween: 20,
   loop: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-response-next',
+    prevEl: '.swiper-response-prev',
   },
   breakpoints: {
     1250: {
@@ -39,20 +61,13 @@ new Swiper('.swiper-response', {
   },
 });
 
-new Swiper('.my-swiper', {
-  loop: true,
-  slidesPerView: 1,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+
 
 new Swiper('.step_cards-swiper', {
   loop: true,
   slidesPerView: 1,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-step_cards-next',
+    prevEl: '.swiper-step_cards-prev',
   },
 });
