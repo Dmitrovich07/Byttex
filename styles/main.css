@@ -30,9 +30,87 @@
 }
 
 .header_content {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 58px;
+  margin-bottom: 100px;
+}
+
+.header-comment {
+  position: absolute;
+  left: 0;
+  bottom: -180px;
+  z-index: 3;
+  max-width: 416px;
+  max-height: 172px;
+  padding: 16px;
+  background-color: #fff;
+  filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.08));
+}
+
+.comment-profile {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.comment-profile-avatar {
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  background-color: #007aff;
+  margin-right: 14px;
+}
+
+.comment-profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.comment-profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.comment-profile-name {
+  color: #676869;
+  font-family: "Sofia Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.45px;
+  margin-right: 20px;
+}
+
+.comment-profile-stars {
+  width: 60px;
+  height: 10px;
+}
+
+.comment-profile-text {
+  color: #828282;
+  font-family: "Suisse Int'l";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.22px;
+  padding: 0 7px;
+}
+
+.comment-text {
+  margin-top: 12px;
+  color: #676869;
+  font-family: "Suisse Int'l";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.48px;
+  max-width: 377px;
 }
 
 .button-arrow {
@@ -90,6 +168,12 @@
 
 .header_list-icon {
   margin-right: 10px;
+}
+
+.header_content-right img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /* MAIN */
@@ -1041,6 +1125,32 @@
 }
 
 @media(max-width: 1150px) {
+  .header_content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header_content-title {
+    display: none;
+  }
+  .header_content-title-mobile {
+    display: block;
+  }
+  .header_content-left {
+    order: 2;
+  }
+  .header_content-right {
+    order: 1;
+    margin: 15px 0 22px 0;
+  }
+  .header-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .header_logo {
+    text-align: center;
+    margin: 14px 0;
+  }
   .step_cards {
     gap: 10px;
   }
