@@ -7,18 +7,24 @@
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="stylesheet" href="./fonts/stylesheet.css">
   <link rel="stylesheet" href="./fonts/suisseintl.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <title>Byttex</title>
 </head>
 <body>
   <div class="wrapper">
     <header class="header">
       <div class="header-announcement">
-        <h5 class="header-announcement-text">CONSCIOUSLY MADE BUTTER SOFT STAPLES FOR EVERY DAY (OR NIGHT)   |   FREE SHIPPING on orders > $200   |   easy 45 day return window.</h5>
+        <h5 class="header-announcement-text">
+          <span>CONSCIOUSLY MADE BUTTER SOFT STAPLES FOR EVERY DAY (OR NIGHT)</span>
+          <span>FREE SHIPPING on orders > $200 </span>
+          <span>easy 45 day return window.</span>
+        </h5>
       </div>
       <div class="container">
         <div class="header_logo">
           <img class="header_logo_img" src="./images/Logotype.svg" alt="Logotype">
         </div>
+        <h1 class="header_content-title-mobile">Don’t apologize for being comfortable.</h1>
         <div class="header_content">
           <div class="header_content-left">
             <h1 class="header_content-title">Don’t apologize for being comfortable.</h1>
@@ -36,7 +42,9 @@
                 Our signature fabric is incredibly comfortable — unlike anything you’ve ever felt.
               </li>
             </ul>
-            <button class="header_button">Customize Your Outfit</button>
+            <div class="header-buttons">
+              <button class="header_button">Customize Your Outfit</button>
+            </div>
           </div>
           <div class="header_content-right">
             <img class="header_content-imga" src="./images/header-image.jpg" alt="Photo Group">
@@ -50,24 +58,54 @@
         <div class="main">
           <img class="response" src="" alt="">
           <h3 class="companies_title">as seen in</h3>
+          <div class="companies_list-container">
+            <div class="custom-swiper-company-container">
+              <div class="swiper swiper-company">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide company">
+                    <img class="slide_companies_list-img" src="./images/eco-stylist.png" alt="ECO-STYLIST">
+                  </div>
+                  <div class="swiper-slide company">
+                    <img class="slide_companies_list-img" src="./images/canadian-living.png" alt="Canadian Living">
+                  </div>
+                  <div class="swiper-slide company">
+                    <img class="slide_companies_list-img" src="./images/jillian-harris.png" alt="JILLIAN HARRIS">
+                  </div> 
+                  <div class="swiper-slide company">
+                    <img class="slide_companies_list-img" src="./images/the-eco-hub.png" alt="THE ECO HUB">
+                  </div>
+                  <div class="swiper-slide company">
+                    <img class="slide_companies_list-img" src="./images/trendhunter.png" alt="TRENDHUNTER">
+                  </div>
+                  <div class="swiper-slide company">
+                    <img class="slide_companies_list-img" src="./images/eco-stylist.png" alt="ECO-STYLIST">
+                  </div>
+                  <div class="swiper-slide company">
+                    <img class="slide_companies_list-img" src="./images/canadian-living.png" alt="Canadian Living">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <ul class="companies_list">
             <li class="companies_list-item">
-              <img class="companies_list-img" src="./images/eco-stylist.jpg" alt="ECO-STYLIST">
+              <img class="companies_list-img" src="./images/eco-stylist.png" alt="ECO-STYLIST">
             </li>
             <li class="companies_list-item">
-              <img class="companies_list-img" src="./images/canadian-living.jpg" alt="Canadian Living">
+              <img class="companies_list-img" src="./images/canadian-living.png" alt="Canadian Living">
             </li>
             <li class="companies_list-item">
-              <img class="companies_list-img" src="./images/jillian-harris.jpg" alt="JILLIAN HARRIS">
+              <img class="companies_list-img" src="./images/jillian-harris.png" alt="JILLIAN HARRIS">
             </li>
             <li class="companies_list-item">
-              <img class="companies_list-img" src="./images/the-eco-hub.jpg" alt="THE ECO HUB">
+              <img class="companies_list-img" src="./images/the-eco-hub.png" alt="THE ECO HUB">
             </li>
             <li class="companies_list-item">
-              <img class="companies_list-img" src="./images/trendhunter.jpg" alt="TRENDHUNTER">
+              <img class="companies_list-img" src="./images/trendhunter.png" alt="TRENDHUNTER">
             </li>
           </ul>
           <div class="loungewear">
+            <h1 class="loungewear-title-mobile">Loungewear you can be proud of.</h1>
             <div class="loungewear-left">
               <h1 class="loungewear-title">Loungewear you can be proud of.</h1>
               <ul class="loungewear_list">
@@ -118,7 +156,24 @@
               </ul>
             </div>
             <div class="loungewear_pride-right">
-
+              <div class="custom-swiper-container">
+                <div class="swiper my-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./images/gallery-photo1.jpg" alt="photo">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/gallery-photo1.jpg" alt="photo">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/gallery-photo1.jpg" alt="photo">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <h6 class="slider-title">White Robe</h6>
+              </div>
             </div>
           </div>
         </div>
@@ -126,8 +181,9 @@
       <div class="self-improvement-section">
         <div class="container">
           <div class="self-improvement">
+            <h1 class="self-improvement-title-mobile">Be your best self.</h1>
             <div class="self-improvement-images">
-              <img src="./images/main-image.jpg" alt="Main Image" class="main-image">
+              <img src="./images/gallery-photo1.jpg" alt="Main Image" class="main-image">
               <img src="./images/top-image.jpg" alt="Top Image" class="top-image">
               <img src="./images/bottom-image.jpg" alt="Bottom Image" class="bottom-image">
             </div>
@@ -163,6 +219,31 @@
               <img src="./images/sun-moon.svg" alt="Sun-moon" class="card-icon">
               <h3 class="card-title">You enjoy!</h3>
               <p class="card-text">Wear hernest around the house, out on the town, or in bed.</p>
+            </div>
+          </div>
+          <div class="slider-for-phone">
+            <div class="custom-swiper-container">
+              <div class="swiper step_cards-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide card">
+                    <img src="./images/shopping basket.svg" alt="Shopping Basket" class="card-icon">
+                    <h3 class="card-title">You save.</h3>
+                    <p class="card-text">Browse our comfort sets and save 15% when you bundle.</p>
+                  </div>
+                  <div class="card swiper-slide">
+                    <img src="./images/car.svg" alt="Car" class="card-icon">
+                    <h3 class="card-title">We ship.</h3>
+                    <p class="card-text">We ship your items within 1-2 days of receiving your order.</p>
+                  </div>
+                  <div class="card swiper-slide">
+                    <img src="./images/sun-moon.svg" alt="Sun-moon" class="card-icon">
+                    <h3 class="card-title">You enjoy!</h3>
+                    <p class="card-text">Wear hernest around the house, out on the town, or in bed.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
           <div class="step_cards-section-buttons">
@@ -201,37 +282,92 @@
           <img src="./images/Rectangle 757.jpg" alt="Rectangle">
           <img src="./images/Rectangle 758.jpg" alt="Rectangle">
         </div>
-        <div class="responses">
-          <div class="response-card">
-            <div class="profile">
-              <div class="profile-avatar"></div>
-              <div class="profile-info">
-                <img src="./images/stars.svg" alt="Stars" class="profile-stars">
-                <h5 class="profile-name">Jane, S.</h5>
+        <div class="custom-swiper-response-container">
+          <div class="swiper swiper-response">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide response-card">
+                <div class="profile">
+                  <div class="profile-avatar"></div>
+                  <div class="profile-info">
+                    <img src="./images/stars.svg" alt="Stars" class="profile-stars">
+                    <h5 class="profile-name">Jane, S.</h5>
+                  </div>
+                </div>
+                <p class="response-text">
+                  Lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit. 
+                  Pellentesque sed sollicitudin dolor, 
+                  non sodales justo. Aenean eget aliquet mi. 
+                  Lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit. 
+                  Pellentesque sed sollicitudin dolor, 
+                  non sodales.
+                </p>
+              </div>
+              <div class="swiper-slide response-card">
+                <div class="profile">
+                  <div class="profile-avatar"></div>
+                  <div class="profile-info">
+                    <img src="./images/stars.svg" alt="Stars" class="profile-stars">
+                    <h5 class="profile-name">Jane, S.</h5>
+                  </div>
+                </div>
+                <p class="response-text">
+                  Lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit. 
+                  Pellentesque sed sollicitudin dolor, 
+                  non sodales justo. Aenean eget aliquet mi.
+                </p>
+              </div>
+              <div class="swiper-slide response-card">
+                <div class="profile">
+                  <div class="profile-avatar"></div>
+                  <div class="profile-info">
+                    <img src="./images/stars.svg" alt="Stars" class="profile-stars">
+                    <h5 class="profile-name">Jane, S.</h5>
+                  </div>
+                </div>
+                <p class="response-text">
+                  Lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit. 
+                  Pellentesque sed sollicitudin dolor, 
+                  non sodales justo. Aenean eget aliquet mi.
+                </p>
+              </div>
+              <div class="swiper-slide response-card">
+                <div class="profile">
+                  <div class="profile-avatar"></div>
+                  <div class="profile-info">
+                    <img src="./images/stars.svg" alt="Stars" class="profile-stars">
+                    <h5 class="profile-name">Jane, S.</h5>
+                  </div>
+                </div>
+                <p class="response-text">
+                  Lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit. 
+                  Pellentesque sed sollicitudin dolor, 
+                  non sodales justo. Aenean eget aliquet mi.
+                </p>
+              </div>
+              <div class="swiper-slide response-card">
+                <div class="profile">
+                  <div class="profile-avatar"></div>
+                  <div class="profile-info">
+                    <img src="./images/stars.svg" alt="Stars" class="profile-stars">
+                    <h5 class="profile-name">Jane, S.</h5>
+                  </div>
+                </div>
+                <p class="response-text">
+                  Lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit. 
+                  Pellentesque sed sollicitudin dolor, 
+                  non sodales justo. Aenean eget aliquet mi.
+                </p>
               </div>
             </div>
-            <p class="response-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi.</p>
           </div>
-          <div class="response-card">
-            <div class="profile">
-              <div class="profile-avatar"></div>
-              <div class="profile-info">
-                <img src="./images/stars.svg" alt="Stars" class="profile-stars">
-                <h5 class="profile-name">Jane, S.</h5>
-              </div>
-            </div>
-            <p class="response-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales.</p>
-          </div>
-          <div class="response-card">
-            <div class="profile">
-              <div class="profile-avatar"></div>
-              <div class="profile-info">
-                <img src="./images/stars.svg" alt="Stars" class="profile-stars">
-                <h5 class="profile-name">Jane, S.</h5>
-              </div>
-            </div>
-            <p class="response-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi.</p>
-          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
         <div class="responses-buttons">
           <button class="responses-button">Customize Your Outfit</button>
@@ -342,6 +478,13 @@
             <div class="questions-right-block">
               <img src="./images/question-img.jpg" alt="Photo" class="questions-img">
             </div>
+            <div class="questions-buttons-phone">
+              <button class="questions-button">Customize Your Outfit</button>
+            </div>
+            <div class="rating-phone">
+              <img src="./images/stars.svg" alt="Stars" class="reting-img">
+              <p class="reting-text">Over 500+ 5 Star Reviews Online</p>
+            </div>
           </div>
         </div>
       </div>
@@ -371,53 +514,56 @@
       </div>
     </main>
     <footer class="footer-section">
-      <div class="footer">
-        <h1 class="footer-title">Find something you love.</h1>
-        <p class="footer-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien 
-          facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.
-        </p>
-        <div class="footer-images">
-          <div class="left-gradient"></div>
-          <img src="./images/footer-left-img.jpg" alt="left-img" class="footer-img">
-          <img src="./images/footer-main-img.jpg" alt="main-img" class="footer-img">
-          <img src="./images/footer-right-img.jpg" alt="right-img" class="footer-img">
-          <div class="right-gradient"></div>
-        </div>
-        <div class="footer-buttons">
-          <button class="footer-button">Customize Your Outfit</button>
-        </div>
-        <div class="footer-info">
-          <div class="payment-methods">
-            <img src="./images/times.svg" alt="Times">
-            <img src="./images/Ships in 1-2 Days.svg" alt="Ships">
-            <img src="./images/payment-metods-icon.svg" alt="Payment Metods">
+      <div class="container">
+        <div class="footer">
+          <h1 class="footer-title">Find something you love.</h1>
+          <p class="footer-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien 
+            facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.
+          </p>
+          <div class="footer-images">
+            <img src="./images/footer-left-img.jpg" alt="left-img" class="footer-img">
+            <img src="./images/footer-main-img.jpg" alt="main-img" class="footer-img">
+            <img src="./images/footer-right-img.jpg" alt="right-img" class="footer-img">
           </div>
-          <div class="advantages-cards">
-            <div class="advantage-card">
-              <img src="./images/footer-icon1.svg" alt="Icon" class="advantage-card-img">
-              <p class="advantage-card-text">
-                FREE Shipping on Orders over $200
-              </p>
+          <div class="footer-buttons">
+            <button class="footer-button">Customize Your Outfit</button>
+          </div>
+          <div class="footer-info">
+            <div class="payment-methods">
+              <img src="./images/times.svg" alt="Times">
+              <img src="./images/Ships in 1-2 Days.svg" alt="Ships">
+              <img src="./images/payment-metods-icon.svg" alt="Payment Metods">
             </div>
-            <div class="advantage-card">
-              <img src="./images/footer-icon2.svg" alt="Icon" class="advantage-card-img">
-              <p class="advantage-card-text">
-                Over 500+ 5 Star Reviews Online
-              </p>
-            </div>
-            <div class="advantage-card">
-              <img src="./images/footer-icon3.svg" alt="Icon" class="advantage-card-img">
-              <p class="advantage-card-text">
-                Made ethically and responsibly.
-              </p>
+            <div class="advantages-cards">
+              <div class="advantage-card">
+                <img src="./images/footer-icon1.svg" alt="Icon" class="advantage-card-img">
+                <p class="advantage-card-text">
+                  FREE Shipping on Orders over $200
+                </p>
+              </div>
+              <div class="advantage-card">
+                <img src="./images/footer-icon2.svg" alt="Icon" class="advantage-card-img">
+                <p class="advantage-card-text">
+                  Over 500+ 5 Star Reviews Online
+                </p>
+              </div>
+              <div class="advantage-card">
+                <img src="./images/footer-icon3.svg" alt="Icon" class="advantage-card-img">
+                <p class="advantage-card-text">
+                  Made ethically and responsibly.
+                </p>
+              </div>
             </div>
           </div>
+          </div>
         </div>
+        <div class="footer-gradient"></div>
       </div>
-      <div class="footer-gradient"></div>
     </footer>
   </div>
 </body>
-<script src="./scripts/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./scripts/swiper.js"></script>
+<script src="./scripts/open-list-script.js"></script>
 </html>

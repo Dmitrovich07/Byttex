@@ -1,12 +1,4 @@
-.wrapper {
-
-}
-
 /* HEADER */
-.header {
-
-}
-
 .header-announcement {
   background: #F9F0E5;
   margin-bottom: 31px;
@@ -23,18 +15,24 @@
   letter-spacing: 0.88px;
 }
 
-.header_logo {
-  margin-bottom: 62px;
+.header-announcement-text span::after {
+  content: "|";
+  padding: 0 10px;
 }
 
-.header_logo_img {
+.header-announcement-text span:last-child::after {
+  content: "";
+  padding: 0;
+}
 
+.header_logo {
+  margin-bottom: 62px;
 }
 
 .header_content {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 }
 
 .header_content-left {
@@ -50,6 +48,18 @@
   line-height: 45px;
   letter-spacing: 1.52px;
   margin-bottom: 32px;
+}
+
+.header_content-title-mobile {
+  color: #01005B;
+  text-align: center;
+  font-family: "Sofia Pro";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 1.04px;
+  display: none;
 }
 
 .header_list {
@@ -78,25 +88,6 @@
   margin-right: 10px;
 }
 
-.header_button {
-  width: 356px;
-  height: 56px;
-  border-radius: 5px;
-  background: #01005B;
-  color: #FFF;
-  text-align: center;
-  font-family: "Suisse Int'l";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.54px;
-}
-
-.header_content-right {
-
-}
-
 /* MAIN */
 .main-section {
   position: relative;
@@ -114,10 +105,6 @@
 .main {
   position: relative;
   z-index: 2;
-}
-
-.response {
-
 }
 
 .companies_title {
@@ -141,20 +128,14 @@
   margin-bottom: 130px;
 }
 
-.companies_list-item {
-
-}
-
-.companies_list-img {
-
+.companies_list-container {
+  display: none;
 }
 
 .loungewear {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 55px;
-}
-
-.loungewear-left {
-
 }
 
 .loungewear-title {
@@ -168,14 +149,11 @@
   margin-bottom: 74px;
 }
 
-.loungewear_list {
-
-}
-
 .loungewear_list-item {
   display: flex;
   align-items: start;
   margin-bottom: 14px;
+  flex-shrink: 0;
 }
 
 .loungewear_list-item:last-child {
@@ -184,10 +162,6 @@
 
 .loungewear_item-icon {
   margin-right: 32px;
-}
-
-.loungewear_item-textcontent {
-
 }
 
 .loungewear_item-title {
@@ -201,6 +175,21 @@
   letter-spacing: 0.88px;
 }
 
+.loungewear-title-mobile {
+  text-align: center;
+  display: none;
+  color: #01005B;
+  text-align: center;
+  font-family: "Sofia Pro";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 1.04px;
+  max-width: 330px;
+  margin-bottom: 25px;
+}
+
 .loungewear_item-text {
   max-width: 500px;
   color: #6C6C6C;
@@ -212,50 +201,65 @@
   letter-spacing: 0.45px;
 }
 
+.slider-title {
+  margin-top: 12px;
+  color: #676869;
+  text-align: center;
+  font-family: "Suisse Int'l";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.39px;
+}
+
+.swiper {
+  max-width: 433px;
+}
+
 .self-improvement-section {
-  padding: 130px 0 100px 0;
+  padding-bottom: 100px;
   background-color: #F0EEEF;
 }
 
 .self-improvement {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .self-improvement-images {
-  padding: 0 50px;
   position: relative;
+  max-width: 480px;
+  max-height: 664px;
+  margin: 83px 0 0 0;
 }
 
 .self-improvement-images .main-image {
-
+  max-width: 100%;
+  clip-path: inset(60px 10px 60px 60px);
 }
 
 .self-improvement-images .top-image, 
 .self-improvement-images .bottom-image {
   position: absolute; 
-  width: 165px; 
+  max-width: 165px; 
   height: auto;
   z-index: 2;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .self-improvement-images .top-image {
-  top: -47px;
-  left: -20px; 
-}
+  top: 0;
+  left: 0; 
+} 
 
 .self-improvement-images .bottom-image {
-  bottom: -30px;
-  right: -20px;
-}
-
-.self-improvement-img {
-
+  bottom: 0;
+  right: 0;
 }
 
 .self-improvement-content {
-  max-width: 620px;
+  max-width: 619px;
 }
 
 .self-improvement-title {
@@ -267,6 +271,19 @@
   line-height: 40px;
   letter-spacing: 1.28px;
   margin-bottom: 30px;
+  margin-top: 130px;
+}
+
+.self-improvement-title-mobile {
+  display: none;
+  color: #2A2996;
+  font-family: "Sofia Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 1.28px;
+  margin: 40px 0 0 0;
 }
 
 .self-improvement-text {
@@ -278,21 +295,6 @@
   line-height: 23px;
   letter-spacing: 0.45px;
   margin-bottom: 20px;
-}
-
-.self-improvement-button {
-  width: 356px;
-  height: 56px;
-  border-radius: 5px;
-  background: #01005B;
-  color: #FFF;
-  text-align: center;
-  font-family: "Suisse Int'l";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.54px;
 }
 
 .step_cards-section {
@@ -311,6 +313,7 @@
   line-height: 40px;
   letter-spacing: 1.28px;
   margin-bottom: 50px;
+  width: 100%;
 }
 
 .step_cards {
@@ -333,10 +336,6 @@
   padding: 0 35px;
 }
 
-.card:nth-child(2) {
-  background-color: #F9F0E6;
-}
-
 .card-title {
   color: #01005B;
   text-align: center;
@@ -357,6 +356,7 @@
   font-weight: 400;
   line-height: 23px;
   letter-spacing: 0.45px;
+  max-width: 275px;
 }
 
 .step_cards-section-buttons,
@@ -366,20 +366,19 @@
   margin-bottom: 10px;
 }
 
-.step_cards-section-button,
-.responses-button {
-  width: 369px;
-  height: 56px;
-  border-radius: 5px;
-  background: #01005B;
-  color: #FFF;
-  text-align: center;
-  font-family: "Suisse Int'l";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.54px;
+.questions-buttons-phone {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.rating-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  display: none;
 }
 
 .rating {
@@ -387,14 +386,6 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
-}
-
-.reting-item {
-
-}
-
-.reting-img {
-
 }
 
 .reting-text {
@@ -447,15 +438,17 @@
   margin-bottom: 111px;
 }
 
-.responses {
+.swiper-response {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
   display: flex;
-  align-items: flex-start;
-  gap: 42px;
-  margin-bottom: 63px;
 }
 
 .response-card {
-  max-width: 338px;
+  width: 100%;
   box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   border: 1px solid #EAEAEA;
@@ -476,10 +469,6 @@
   background-color: #1C2E58;
   border-radius: 50%;
   margin-right: 14px;
-}
-
-.profile-stars {
-
 }
 
 .profile-name {
@@ -524,10 +513,6 @@
   line-height: 40px;
   letter-spacing: 1.28px;
   margin-bottom: 50px;
-}
-
-.question-list {
-
 }
 
 .questions-item {
@@ -629,18 +614,6 @@
   max-height: 200px;
 }
 
-.horizontal {
-
-}
-
-.vertical {
-
-}
-
-.questions-right-block {
-
-}
-
 .questions-img {
   max-width: 430px;
   height: auto;
@@ -649,10 +622,6 @@
 .impact-section {
   padding: 40px 0;
   background-color: #F0EEEF;
-}
-
-.impact {
-
 }
 
 .impact-title {
@@ -686,10 +655,6 @@
 .impact-card:nth-child(2) {
   border-left: 1px solid rgba(196, 196, 196, 0.50);
   border-right: 1px solid rgba(196, 196, 196, 0.50);
-}
-
-.impact-card-icon {
-  
 }
 
 .impact-card-title {
@@ -734,7 +699,7 @@
   color: #01005B;
   text-align: center;
   font-family: "Sofia Pro";
-  font-size: 32px;
+  font-size: clamp(26px, 2vw, 32px);
   font-style: normal;
   font-weight: 400;
   line-height: 40px; 
@@ -753,38 +718,20 @@
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0.45px;
-  
 }
 
 .footer-images {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 58px 0;
+  min-width: 320px;
 }
 
-.footer-buttons {
-
-}
-
-.footer-button {
-  width: 369px;
-  height: 56px; 
-  border-radius: 5px;
-  background: #01005B;
-  color: #FFF;
-  text-align: center;
-  font-family: "Suisse Int'l";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.54px;
-}
-
-.footer-info {
-
+.footer-img {
+  max-width: 100%;
+  min-width: 105px;
+  height: auto;
 }
 
 .payment-methods {
@@ -803,11 +750,17 @@
 }
 
 .advantage-card {
-  max-width: 210px;
+  width: 210px;
+  padding: 10px 23px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.advantage-card:nth-child(2) {
+  border-left: 1px solid rgba(196, 196, 196, 0.40);
+  border-right: 1px solid rgba(196, 196, 196, 0.40);
 }
 
 .advantage-card-img {
@@ -820,7 +773,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px; 
   letter-spacing: 0.42px;
 }
 
@@ -834,31 +787,347 @@
   background: linear-gradient(0deg, #F9F0E5 0%, rgba(249, 240, 229, 0.18) 43.05%, rgba(249, 240, 229, 0.00) 100%);
 }
 
-
-/* .left-gradient,
-.right-gradient {
-  width: 139px;
-  height: 196px;
-  background: linear-gradient(180deg, rgba(249, 240, 229, 0.70) 0%, rgba(249, 240, 229, 0.22) 100%);
+.slider-for-phone {
+  display: none;
 }
 
-.left-gradient {
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  left: 550px;
-  transform: translateY(-50%);
-}
-
-.right-gradient {
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  right: 550px;
-  transform: translateY(-50%);
-}
-
-.footer-img {
+/* CUSTOM STYLE SWIPER */
+.custom-swiper-container {
   position: relative;
-  z-index: 2;
-} */
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 55px;
+}
+
+.custom-swiper-response-container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 55px;
+  margin-bottom: 63px;
+}
+
+.custom-swiper-company-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 55px;
+}
+
+.step_cards-swiper {
+  width: 346px;
+  overflow: hidden;
+}
+
+.my-swiper {
+  width: 433px;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #fff;
+  height: 300px;
+}
+
+.card.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 321px;
+}
+
+.swiper-company {
+  width: 100%;
+  max-width: 400px;
+  height: 60px;
+  margin: 20PX auto;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #676869 !important; 
+}
+
+.swiper-pagination-bullet {
+  background-color: #000 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000 !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.swiper-button-prev {
+  left: -50px;
+}
+
+.swiper-button-next {
+  right: -50px;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 5;
+}
+
+@media(max-width: 1500px) {
+  .fans-section-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-height: calc(2 * 130px + 10px); 
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  .fans-section-images img {
+    flex: 0 0 102px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}
+
+@media(max-width: 1250px) {
+  .swiper-response {
+    max-width: 600px;
+  }
+}
+
+@media(max-width: 1150px) {
+  .step_cards {
+    gap: 10px;
+  }
+  .loungewear {
+    flex-direction: column;
+    align-items: center;
+  }
+  .loungewear_pride-right {
+    order: 1;
+  }
+  .loungewear-left {
+    order: 2;
+  }
+  .loungewear-title {
+    display: none;
+  }
+  .loungewear-title-mobile {
+    display: block;
+  }
+  .loungewear_list-item {
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 32px;
+  }
+  .loungewear_item-textcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .loungewear_item-title {
+    text-align: center;
+  }
+  .loungewear_item-text{
+    text-align: center;
+    max-width: 244px;
+  }
+  .loungewear_item-icon {
+    margin: 0;
+  }
+}
+
+@media(max-width: 1080px) {
+  .step_cards {
+    display: none;
+  }
+  .slider-for-phone {
+    display: block;
+    margin: 23px 0 41px 0;
+  }
+}
+
+@media(max-width: 1200px) {
+  .companies_list {
+    gap: 40px;
+  }
+}
+
+@media(max-width: 1140px) {
+  .self-improvement {
+    flex-direction: column;
+    align-items: center;
+  }
+  .self-improvement-title-mobile {
+    display: block;
+  }
+  .self-improvement-title {
+    display: none;
+  }
+  .self-improvement-text {
+    min-width: 335px;
+  }
+  .self-improvement-button {
+    display: none;
+  }
+  .self-improvement-content {
+    margin: 0 0 54px 0;
+  }
+  .self-improvement-images {
+    margin: 0;
+  }
+  .top-image,
+  .bottom-image {
+    display: none;
+  }
+  .self-improvement-images .main-image {
+    clip-path: inset(80px 10px 120px 10px);
+  }
+}
+
+@media(max-width: 1025px) {
+  .questions-right-block {
+    display: none;
+  }
+  .questions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .question-title {
+    text-align: center;
+  }
+  .questions-buttons-phone {
+    display: flex;
+    margin-top: 55px;
+  }
+  .rating-phone {
+    display: flex;
+    margin-bottom: 54px;
+  }
+  .questions-section {
+    margin: 0;
+  }
+}
+
+@media(max-width: 860px) {
+  .header_content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header_content-title {
+    display: none;
+  }
+  .header_content-title-mobile {
+    display: block;
+  }
+  .header_content-left {
+    order: 2;
+  }
+  .header_content-right {
+    order: 1;
+    margin: 15px 0 22px 0;
+  }
+  .header-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .header_logo {
+    text-align: center;
+    margin: 14px 0;
+  }
+  .header-announcement-text span:nth-child(1),
+  .header-announcement-text span:nth-child(3) {
+    display: none;
+  }
+  .header-announcement-text span:nth-child(2)::after {
+    content: "";
+    padding: 0;
+    color: #565656;
+    text-align: center;
+    font-family: "Suisse Int'l";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.88px;
+  }
+}
+
+@media(max-width: 800px) {
+  .companies_list {
+    gap: 20px;
+  }
+}
+
+@media(max-width: 720px) {
+  .advantages-cards {
+    display: none;
+  }
+  .impact-cards {
+    flex-direction: column;
+  }
+  .impact-card:nth-child(2) {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid rgba(196, 196, 196, 0.50);
+    border-bottom: 1px solid rgba(196, 196, 196, 0.50);
+  }
+  .impact-card {
+    padding: 23px 0;
+  }
+}
+
+@media(max-width: 700px) {
+  .companies_list {
+    display: none;
+  }
+  .companies_list-container {
+    display: flex;
+  }
+}
+
+@media(max-width: 650px) {
+  .my-swiper {
+    width: 303px;
+  }
+  .step_cards-swiper {
+    width: 288px;
+  }
+  .card.swiper-slide {
+    height: 288px;
+  }
+  .self-improvement-content {
+    max-width: 335px;
+  }
+  .self-improvement-images .main-image {
+    max-width: 305px;
+    clip-path: inset(60px 10px 60px 10px);
+  }
+}
