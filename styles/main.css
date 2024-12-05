@@ -289,6 +289,12 @@
   letter-spacing: 0.45px;
 }
 
+
+.loungewear-buttons-phone,
+.loungewear-buttons-phone .rating-phone {
+  display: none;
+}
+
 .slider-title {
   margin-top: 12px;
   color: #676869;
@@ -328,7 +334,8 @@
 }
 
 .self-improvement-images .top-image, 
-.self-improvement-images .bottom-image {
+.self-improvement-images .bottom-image,
+.self-improvement-images .bottom-image-phone {
   position: absolute; 
   max-width: 165px; 
   height: auto;
@@ -1129,6 +1136,13 @@
     flex-direction: column;
     align-items: center;
   }
+  .header_content-left {
+    padding: 0 28px;
+  }
+  .loungewear-rating-phone,
+  .loungewear-buttons-phone {
+    display: block;
+  }
   .header_content-title {
     display: none;
   }
@@ -1229,11 +1243,14 @@
     margin: 0 0 54px 0;
   }
   .self-improvement-images {
-    margin: 0;
+    margin: 45px 0;
   }
-  .top-image,
-  .bottom-image {
-    display: none;
+  .self-improvement-images .top-image {
+    left: -52px;
+  }
+  .self-improvement-images .bottom-image {
+    right: -52px;
+    clip-path: inset(20px 0 20px 0);
   }
   .self-improvement-images .main-image {
     clip-path: inset(80px 10px 120px 10px);
@@ -1258,6 +1275,9 @@
   .rating-phone {
     display: flex;
     margin-bottom: 54px;
+  }
+  .loungewear .rating-phone{
+    margin-bottom: 0;
   }
   .questions-section {
     margin: 0;
@@ -1340,6 +1360,9 @@
   .companies_list-container {
     display: flex;
   }
+  .questions-left-block {
+    padding: 0 24px;
+  }
 }
 
 @media(max-width: 650px) {
@@ -1358,6 +1381,16 @@
   .self-improvement-images .main-image {
     max-width: 305px;
     clip-path: inset(60px 10px 60px 10px);
+  }
+  .self-improvement-images .bottom-image,
+  .self-improvement-images .top-image {
+    max-width: 102px;
+  }
+  .self-improvement-images .top-image {
+    left: -30px;
+  }
+  .self-improvement-images .bottom-image {
+    right: -30px;
   }
 }
 
